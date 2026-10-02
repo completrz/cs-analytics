@@ -439,3 +439,4 @@ JOIN rounds r
     AND t.round = r.round
 GROUP BY trade_time
 ORDER BY MIN(time_to_next_kill_s);
+-- no strong relationship between response time and round outcome once the opponent gets the next kill
