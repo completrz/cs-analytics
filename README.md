@@ -4,6 +4,8 @@ A data analytics project analyzing professional Counter-Strike 2 rounds using Po
 
 ![CS2 Dashboard](images/dashboard.png)
 
+[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/nicholas.hinkel/viz/CS2-Analytics/CS2RoundAnalytics?publish=yes)
+
 ## Project Overview
 
 This project analyzes 16,527 professional CS2 rounds to identify factors associated with round outcomes and build a machine learning model to predict whether CT or T wins.
