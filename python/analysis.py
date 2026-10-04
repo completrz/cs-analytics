@@ -248,3 +248,25 @@ model_results = pd.DataFrame({
 model_results.to_csv("tableau/model_accuracy.csv", index=False)
 
 print("\nExported tableau/model_accuracy.csv")
+
+#app
+import streamlit as st
+import pandas as pd
+import joblib
+
+saved = joblib.load("model.pkl")
+
+model = saved["model"]
+weapon_options = saved["weapon_options"]
+map_options = saved["map_options"]
+
+joblib.dump(
+    {
+        "model": model,
+        "weapon_options": weapon_options,
+        "map_options": map_options
+    },
+    "model.pkl"
+)
+
+print("Saved model.pkl")
